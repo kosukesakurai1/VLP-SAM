@@ -1,0 +1,20 @@
+services:
+  VLP-SAM: 
+    build:
+      context: .
+      dockerfile: Dockerfile
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+    shm_size: "16gb"
+    volumes:
+      - ../:/workdir
+    ports:
+      - 8888:8888
+      - 6006:6006
+    #command: bash -c "jupyter lab --port 8888 --ip=0.0.0.0 --no-browser --allow-root --NotebookApp.token=''"
+    #command: bash -c "/bin/bash"
+    stdin_open: true
+    tty: true

@@ -1,0 +1,7 @@
+numpy
+Pillow
+fvcore
+tensorboardX
+tensorboard
+regex
+ftfy
