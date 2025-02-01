@@ -17,11 +17,19 @@ Authors: Kosuke Sakurai, Ryotaro Shimizu, Masayuki Goto.
 
 Environment settings (using Docker):
 ```bash
-docker compose up
+git clone https://github.com/kosukesakurai1/VLP-SAM.git
+cd VLP-SAM
+
+docker compose up -d
+```
+
+For training, use the following command to activate the virtual environment and run your scripts:
+```bash
+docker compose exec vlpsam /bin/bash
 ```
 
 
-## Preparing Few-Shot Segmentation Datasets and Weights
+## Preparing Few-Shot Segmentation Datasets and Pre-Trained Weights
 Download following datasets:
 
 > #### 1. PASCAL-5<sup>i</sup>
@@ -86,9 +94,9 @@ We provide a example training script "train.sh". Detailed training argumnets are
 > torchrun --nproc_per_node=$GPUs$ train.py \
 >          --datapath $PATH_TO_YOUR_DATA$ \
 >          --logpath $PATH_TO_YOUR_LOG$ \
->          --weightpath 'weights/' \
+>          --weightpath $PATH_TO_YOUR_WEIGHT$ \
 >          --benchmark {coco, pascal} \
->          --backbone {resnet50, ViT-L/14, ViT-B/16, RN50, CS-ViT-B/16, CS-ViT-L/14, CS-RN50} \
+>          --backbone {resnet50, RN50, ViT-B/16, ViT-L/14, CS-RN50, CS-ViT-B/16, CS-ViT-L/14} \
 >          --fold {0, 1, 2, 3} \
 >          --condition 'mask' \
 >          --num_queirs 50 \
@@ -102,5 +110,16 @@ We provide a example training script "train.sh". Detailed training argumnets are
 #### Results (1-shot):
 
 <div align="center">
-  <img src="assets/result.png"/ width="97%"> <br>
+  <img src="assets/result.png"/ width="100%"> <br>
 </div>
+
+## Citation
+If you use this code for your research, please consider citing:
+````BibTeX
+@inproceedings{xxx,
+    title={VLP-SAM},
+    author={Kosuke Sakurai, and other authors},
+    booktitle={arxiv},
+    year={2025}
+}
+````
