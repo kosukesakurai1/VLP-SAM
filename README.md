@@ -123,3 +123,8 @@ If you use this code for your research, please consider citing:
     year={2025}
 }
 ````
+
+
+## Reference
+
+- [https://github.com/syp2ysy/VRP-SAM](https://github.com/syp2ysy/VRP-SAM)
