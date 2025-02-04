@@ -1,6 +1,6 @@
 ## VLP-SAM: Vision and Language reference Prompt into SAM
 
-Official implementation of ['Vision and Language Reference Prompt into SAM for Few-shot Segmentation'](https://arxiv.org/pdf/2409.12597.pdf).
+Official implementation of ['Vision and Language Reference Prompt into SAM for Few-shot Segmentation'](https://arxiv.org/pdf/2502.00719.pdf).
 
 Authors: Kosuke Sakurai, Ryotaro Shimizu, Masayuki Goto.
 
@@ -116,11 +116,11 @@ We provide a example training script "train.sh". Detailed training argumnets are
 ## Citation
 If you use this code for your research, please consider citing:
 ````BibTeX
-@inproceedings{xxx,
-    title={VLP-SAM},
-    author={Kosuke Sakurai, and other authors},
-    booktitle={arxiv},
-    year={2025}
+@article{kosuke2025vlp,
+    title={Vision and Language Reference Prompt into SAM for Few-shot Segmentation},
+    author={Kosuke Sakurai and Ryotaro Shimizu and Masayuki Goto},
+    journal={arXiv preprint arXiv:2502.00719},
+    year={2025},
 }
 ````
 
