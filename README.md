@@ -116,9 +116,9 @@ We provide a example training script "train.sh". Detailed training argumnets are
 ## Citation
 If you use this code for your research, please consider citing:
 ````BibTeX
-@article{kosuke2025vlp,
+@article{sakurai2025vision,
     title={Vision and Language Reference Prompt into SAM for Few-shot Segmentation},
-    author={Kosuke Sakurai and Ryotaro Shimizu and Masayuki Goto},
+    author={Sakurai, Kosuke and Shimizu, Ryotaro and Goto, Masayuki},
     journal={arXiv preprint arXiv:2502.00719},
     year={2025},
 }
