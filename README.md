@@ -116,7 +116,7 @@ We provide a example training script "train.sh". Detailed training argumnets are
 #### Visualization (1-shot):
 
 <div align="center">
-  <img src="assets/visualization_horse.png"/ width="97%"> <br>
+  <img src="assets/visualization_horse.png"/ width="80%"> <br>
 </div>
 
 Several other visualization examples are stored [here](./assets).
