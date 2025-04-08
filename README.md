@@ -113,6 +113,15 @@ We provide a example training script "train.sh". Detailed training argumnets are
   <img src="assets/result.png"/ width="100%"> <br>
 </div>
 
+#### Visualization (1-shot):
+
+<div align="center">
+  <img src="assets/visualization_horse.png"/ width="97%"> <br>
+</div>
+
+Several other visualization examples are stored [here](./assets).
+
+
 ## Citation
 If you use this code for your research, please consider citing:
 ````BibTeX
